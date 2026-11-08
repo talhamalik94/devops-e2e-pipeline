@@ -1,0 +1,9 @@
+# Keep the build context small and keep test/dev files out of the image.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+test_*.py
+requirements-dev.txt
+Dockerfile
+.dockerignore

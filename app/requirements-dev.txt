@@ -1,0 +1,3 @@
+# Test-only dependencies. Kept out of the production image.
+-r requirements.txt
+pytest==9.2.0

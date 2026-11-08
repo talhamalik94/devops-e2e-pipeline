@@ -1,0 +1,17 @@
+# Everything in this repo is pinned (action SHAs, base-image digest, Python
+# packages). Dependabot keeps those pins fresh by opening weekly PRs, and each
+# PR runs the full pipeline (tests, scan, kind deploy-test) before merge.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+  - package-ecosystem: docker
+    directory: /app
+    schedule:
+      interval: weekly
+  - package-ecosystem: pip
+    directory: /app
+    schedule:
+      interval: weekly
