@@ -19,8 +19,8 @@ spec:
         - name: app
           # Local image for kind/minikube:
           # image: demo-app:local
-          # Docker Hub image (asruf/demo-app) when using CI/CD:
-          image: docker.io/asruf/demo-app:latest
+          # Docker Hub image (beingmalik/demo-app) when using CI/CD:
+          image: docker.io/beingmalik/demo-app:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080

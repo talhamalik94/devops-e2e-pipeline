@@ -20,3 +20,5 @@ venv/
 # Local overrides
 *.local.yaml
 docs/*
+__pycache__/
+.pytest_cache/
